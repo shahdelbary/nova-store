@@ -1,32 +1,80 @@
-# NOVA Store — DEVPLAY demo
+<div align="center">
+  <img src="./assets/nova-readme-banner.svg" width="100%" alt="NOVA Store — interactive commerce demo by DEVPLAY" />
 
-متجر إلكتروني تجريبي عربي يعرض رحلة العميل من تصفح المنتجات إلى السلة والطلب، ومعه لوحة إدارة تجريبية للطلبات والمنتجات.
+  <br />
 
-## رفع الملفات على GitHub
+  <img src="https://img.shields.io/badge/Experience-Interactive%20Demo-A782FA?style=for-the-badge" alt="Interactive demo" />
+  <img src="https://img.shields.io/badge/Language-Arabic%20RTL-F477BD?style=for-the-badge" alt="Arabic RTL" />
+  <img src="https://img.shields.io/badge/Stack-HTML%20%7C%20CSS%20%7C%20JavaScript-21172D?style=for-the-badge" alt="HTML CSS JavaScript" />
 
-1. أنشئي Repository جديدًا باسم تختارينه، مثل `nova-store-demo`. اختاري **Public** إذا أردتِ أن يتمكن العملاء من فتح الموقع عبر GitHub Pages.
-2. ارفعي الملفات الأربعة الموجودة بجوار هذا الملف إلى **جذر الـRepository**: `index.html` و`styles.css` و`mobile-fix.css` و`app.js`. يمكنك رفع `README.md` معها أيضًا.
-3. من صفحة الـRepository افتحي **Settings → Pages**.
-4. تحت **Build and deployment** اختاري **Deploy from a branch**، ثم `main` و`/(root)`، واضغطي **Save**.
-5. انتظري حتى يظهر رابط الموقع في صفحة **Pages**. انسخي الرابط الحقيقي من GitHub وأضيفيه إلى GitHub Profile README أو البورتفوليو.
+  <p><strong>From product discovery to checkout and store management — one complete, clickable showcase.</strong></p>
+  <p>تجربة متجر إلكتروني تفاعلية من DEVPLAY، تعرض رحلة العميل ولوحة الإدارة في موقع واحد.</p>
 
-> ارفعي هذه الملفات في Repository منفصل عن Repository البروفايل `shahdelbary` حتى لا يحل `index.html` أو هذا `README.md` محل محتوى البروفايل.
+  <a href="https://devplaystudio.com">DEVPLAY</a> ·
+  <a href="https://portfolio.devplaystudio.com">Portfolio</a> ·
+  <a href="https://github.com/shahdelbary">GitHub Profile</a>
+</div>
 
-## ما الذي يعمل في الديمو؟
+---
 
-- البحث والتصفية وتفاصيل المنتجات.
-- السلة وتعديل الكميات وحساب الإجمالي.
-- تسجيل طلب تجريبي بدون دفع أو إرسال بيانات إلى سيرفر.
-- ظهور الطلب الجديد في لوحة الإدارة وتغيير حالته.
-- إظهار وإخفاء المنتجات من لوحة الإدارة.
-- حفظ حالة التجربة في `localStorage` داخل متصفح الزائر، مع زر لإعادة تعيينها.
+## ✦ The idea
 
-المنتجات والطلبات والأرقام المعروضة **بيانات توضيحية**. لا توجد بوابة دفع أو قاعدة بيانات أو حساب أدمن حقيقي. لوحة الإدارة مفتوحة للجميع عمدًا لعرض التجربة، وكل زائر يرى بيانات متصفحه فقط.
+**NOVA Store** is a front-end commerce demo built to show clients what a modern online shop can feel like. Visitors can browse a curated collection of tech products, build a cart, place a sample order, then switch to a demo admin dashboard to see the same order appear.
 
-## تعديل سريع
+The interface is designed in Arabic with right-to-left layout, responsive screens, and a violet/pink visual identity inspired by DEVPLAY.
 
-- المنتجات والأسعار والأوصاف: بداية `app.js`.
-- الألوان والتنسيق: `styles.css`.
-- النصوص وروابط DEVPLAY: `index.html`.
+## ✦ Explore the experience
 
-الملفات تعمل مباشرة على GitHub Pages لأنها تستخدم HTML وCSS وJavaScript فقط، مع مسارات نسبية للملفات.
+| Storefront | Checkout | Admin demo |
+| :--- | :--- | :--- |
+| Search products, filter categories, and view product details. | Change quantities, review totals, and place a sample order. | View orders, update their status, inspect inventory, and hide or show products. |
+
+**Suggested walkthrough:** choose a product → add it to the cart → place a sample order → click **“شاهد الطلب في لوحة الإدارة”** → update its status.
+
+## ✦ What is included
+
+- Six sample products with descriptions, prices, stock, and detail views.
+- Search and category filters.
+- Cart with quantity controls and live totals.
+- Sample checkout with basic form validation and order confirmation.
+- Demo dashboard with order overview, status controls, inventory visibility, and illustrative metrics.
+- Browser-local persistence with `localStorage` and a reset option.
+- Responsive Arabic layout and reduced-motion support.
+
+## ✦ Run locally
+
+Open `index.html` in a browser. No installation, build command, framework, or API key is required.
+
+```text
+nova-store-demo/
+├── index.html
+├── styles.css
+├── mobile-fix.css
+├── app.js
+├── README.md
+└── assets/
+    └── nova-readme-banner.svg
+```
+
+## ✦ Publish with GitHub Pages
+
+1. Create a **separate repository** for this project. Do not replace the special `shahdelbary` profile repository.
+2. Upload all files and the `assets` folder to the repository root.
+3. Open **Settings → Pages**.
+4. Under **Build and deployment**, choose **Deploy from a branch**, then select `main` and `/(root)`.
+5. Save and copy the real Pages URL once GitHub shows it. Add that URL to your GitHub profile and portfolio.
+
+## ✦ Demo scope
+
+This is a **showcase**, not a live commerce backend. Products, initial orders, and chart values are illustrative. No real payment is taken. The admin view is intentionally open so clients can explore it; it has no authentication. New orders and changes live only in each visitor's browser, so they are not shared across devices or sent to DEVPLAY.
+
+## ✦ Customize
+
+- Edit sample products, prices, and descriptions near the top of `app.js`.
+- Change colors and layout in `styles.css`.
+- Update copy and links in `index.html`.
+
+<div align="center">
+  <br />
+  <sub>Designed and developed by <a href="https://devplaystudio.com">DEVPLAY</a> · © 2026</sub>
+</div>
