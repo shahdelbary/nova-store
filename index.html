@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#120b20" />
+  <meta name="description" content="متجر إلكتروني تجريبي تفاعلي من DEVPLAY: تصفح المنتجات، السلة، الطلب، ولوحة الإدارة." />
+  <title>NOVA Store — تجربة متجر من DEVPLAY</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./mobile-fix.css" />
+</head>
+<body>
+  <div class="demo-ribbon"><span class="live-dot"></span> تجربة تفاعلية من DEVPLAY <span class="ribbon-sep">•</span> المنتجات والطلبات هنا للعرض فقط، بدون دفع حقيقي</div>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a href="#top" class="brand" aria-label="NOVA الرئيسية"><span class="brand-icon">✦</span><span class="brand-name">NOVA<span class="brand-dot">.</span><small>BY DEVPLAY</small></span></a>
+      <nav class="main-nav" aria-label="التنقل الرئيسي"><a href="#products">المتجر</a><a href="#experience">عن التجربة</a><a href="#footer">تواصل</a></nav>
+      <div class="header-actions"><button class="admin-link" id="openAdmin" type="button"><span>⌘</span> جرّب لوحة الإدارة</button><button class="cart-button" id="openCart" type="button" aria-label="افتح السلة">السلة <span class="cart-icon">🛒</span><b id="cartCount">0</b></button></div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero shell">
+      <div class="hero-copy"><div class="eyebrow"><span class="eyebrow-line"></span> COMMERCE EXPERIENCE / 01</div><h1>تسوّق المستقبل.<br><em>بأسلوب مختلف.</em></h1><p>تجربة متجر إلكتروني كاملة صُمّمت لتريَ العميل الرحلة من أول اكتشاف المنتج، مرورًا بالسلة والطلب، وحتى إدارة كل شيء من مكان واحد.</p><div class="hero-buttons"><a class="btn btn-primary" href="#products">تسوّق المجموعة <span>↗</span></a><button class="btn btn-outline" id="heroAdmin" type="button">استكشف لوحة الإدارة <span>↖</span></button></div><div class="hero-meta"><span><b>06</b> منتجات تجريبية</span><i></i><span><b>100%</b> تجربة تفاعلية</span><i></i><span><b>0</b> دفعات حقيقية</span></div></div>
+      <div class="hero-art" aria-label="عرض بصري لسماعات NOVA"><div class="hero-glow"></div><div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div><div class="hero-product">🎧</div><div class="float-tag tag-top"><span>✦</span> صوت يتجاوز التوقعات</div><div class="float-tag tag-bottom"><small>NOVA SOUND</small><strong>Pulse Pro</strong><span>01 / 06</span></div><span class="hero-spark spark-one">✦</span><span class="hero-spark spark-two">✧</span></div>
+    </section>
+
+    <div class="marquee-wrap" aria-hidden="true"><div class="marquee-track">DESIGNED TO IMPRESS <span>✦</span> BUILT TO CONVERT <span>✦</span> MADE BY DEVPLAY <span>✦</span> DESIGNED TO IMPRESS <span>✦</span> BUILT TO CONVERT <span>✦</span> MADE BY DEVPLAY <span>✦</span></div></div>
+
+    <section class="catalog shell" id="products"><div class="section-heading"><div><span class="section-kicker">THE COLLECTION / المجموعة</span><h2>اكتشف المنتجات <span>✦</span></h2><p>تفاصيل واضحة، تجربة سريعة، وكل خطوة مصممة بعناية.</p></div><span class="item-counter" id="itemCounter">06 منتجات</span></div><div class="catalog-tools"><div class="filters" id="filters" role="group" aria-label="تصفية المنتجات"><button class="filter active" data-filter="all" type="button">الكل</button><button class="filter" data-filter="audio" type="button">صوتيات</button><button class="filter" data-filter="desk" type="button">مساحة العمل</button><button class="filter" data-filter="wearable" type="button">أجهزة ذكية</button></div><label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="ابحث عن منتج..." aria-label="ابحث عن منتج" /></label></div><div class="product-grid" id="productGrid"></div><p class="empty-state hidden" id="emptyState">لا توجد منتجات تطابق البحث. جرّب كلمة أخرى.</p></section>
+
+    <section class="experience" id="experience"><div class="shell experience-inner"><div><span class="section-kicker">BEHIND THE EXPERIENCE</span><h2>واجهة عميل جذابة.<br><em>وإدارة واضحة.</em></h2><p>هذا الديمو يوضح كيف يمكن للمتجر أن يجمع بين الشكل المميز ورحلة شراء سلسة، مع لوحة تعرض الطلبات والمخزون والمؤشرات في الوقت نفسه.</p><button class="btn btn-light" id="experienceAdmin" type="button">افتح لوحة الإدارة <span>↗</span></button></div><div class="experience-cards"><div class="experience-card"><span>01</span><b>تصفح واكتشاف</b><p>بحث وتصنيفات وتفاصيل تساعد الزائر يختار بسرعة.</p></div><div class="experience-card"><span>02</span><b>سلة وطلب</b><p>تعديل الكمية ومراجعة الإجمالي وإرسال طلب تجريبي.</p></div><div class="experience-card"><span>03</span><b>لوحة إدارة</b><p>متابعة الطلبات وتحديث حالتها وإدارة عرض المنتجات.</p></div></div></div></section>
+  </main>
+
+  <footer id="footer"><div class="shell footer-inner"><div><div class="footer-brand">NOVA<span>.</span></div><p>تجربة متجر إلكتروني من تصميم وتطوير DEVPLAY.</p></div><div class="footer-links"><a href="https://devplaystudio.com" target="_blank" rel="noopener noreferrer">DEVPLAY ↗</a><a href="https://portfolio.devplaystudio.com" target="_blank" rel="noopener noreferrer">معرض الأعمال ↗</a><a href="https://github.com/shahdelbary" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div><small>© 2026 DEVPLAY · Demo experience</small></div></footer>
+
+  <div class="overlay hidden" id="overlay"></div>
+  <aside class="drawer hidden" id="cartDrawer" aria-modal="true" role="dialog" aria-labelledby="cartTitle"><div class="drawer-head"><div><span class="drawer-kicker">YOUR BAG / سلتك</span><h2 id="cartTitle">سلة التسوق <span id="cartTitleCount">(0)</span></h2></div><button class="icon-button" id="closeCart" type="button" aria-label="إغلاق السلة">×</button></div><div class="drawer-body" id="cartItems"></div><div class="drawer-footer" id="cartFooter"><div class="total-line"><span>الإجمالي</span><strong id="cartTotal">0 ج.م</strong></div><p>تجربة فقط — لن يُطلب منك دفع أي مبلغ.</p><button class="btn btn-primary btn-wide" id="checkoutButton" type="button">إتمام الطلب التجريبي <span>↗</span></button></div></aside>
+
+  <div class="modal hidden" id="productModal" role="dialog" aria-modal="true" aria-labelledby="productModalTitle"><button class="icon-button modal-close" id="closeProduct" type="button" aria-label="إغلاق التفاصيل">×</button><div id="productModalBody"></div></div>
+  <div class="modal checkout-modal hidden" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle"><button class="icon-button modal-close" id="closeCheckout" type="button" aria-label="إغلاق الطلب">×</button><div class="checkout-content" id="checkoutContent"><span class="section-kicker">CHECKOUT / إتمام الطلب</span><h2 id="checkoutTitle">خطوة أخيرة، وتجربتك تكتمل.</h2><p>املأ بيانات تجريبية لرؤية كيف يظهر الطلب في لوحة الإدارة. لا تكتب معلومات حساسة.</p><form id="checkoutForm"><label>الاسم <input name="name" required maxlength="50" autocomplete="off" placeholder="مثال: أحمد محمد" /></label><label>رقم هاتف تجريبي <input name="phone" required inputmode="tel" pattern="[0-9+() -]{7,20}" placeholder="01000000000" /></label><label>المدينة <select name="city" required><option value="">اختر المدينة</option><option>القاهرة</option><option>الإسكندرية</option><option>الجيزة</option><option>مدينة أخرى</option></select></label><div class="checkout-summary"><span>إجمالي الطلب</span><strong id="checkoutTotal">0 ج.م</strong></div><button class="btn btn-primary btn-wide" type="submit">تأكيد الطلب التجريبي <span>↗</span></button></form></div></div>
+
+  <div class="admin-view hidden" id="adminView"><aside class="admin-sidebar"><div class="admin-brand">NOVA<span>.</span><small>ADMIN DEMO</small></div><button class="mobile-back" id="mobileBackToStore" type="button">↗ المتجر</button><div class="admin-menu-label">WORKSPACE</div><nav aria-label="لوحة الإدارة"><button class="admin-nav active" data-panel="overview" type="button"><span>◫</span> نظرة عامة</button><button class="admin-nav" data-panel="orders" type="button"><span>▤</span> الطلبات <b id="adminOrderCount">0</b></button><button class="admin-nav" data-panel="inventory" type="button"><span>▦</span> المنتجات</button></nav><div class="admin-side-bottom"><div class="demo-status"><span class="live-dot"></span><div><strong>وضع العرض التجريبي</strong><small>البيانات محفوظة على هذا الجهاز</small></div></div><button id="resetDemo" type="button">↺ إعادة تعيين التجربة</button><button id="backToStore" type="button">↗ العودة للمتجر</button></div></aside><div class="admin-main"><header class="admin-topbar"><div><span class="admin-top-kicker">DEVPLAY / COMMERCE DASHBOARD</span><h1 id="adminPageTitle">نظرة عامة</h1></div><div class="admin-top-actions"><span>نسخة تجريبية</span><div class="admin-avatar">DP</div></div></header><div class="admin-content" id="adminContent"></div></div></div>
+  <div class="toast hidden" id="toast" role="status" aria-live="polite"></div>
+  <script src="./app.js" defer></script>
+</body>
+</html>
