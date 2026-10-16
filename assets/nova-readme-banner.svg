@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">NOVA Store — Commerce Experience by DEVPLAY</title>
+  <desc id="desc">A violet and pink cyber-style banner with a softly animated grid and NOVA Store title</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#10091c"/><stop offset=".55" stop-color="#241232"/><stop offset="1" stop-color="#120a20"/></linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#a782fa"/><stop offset=".55" stop-color="#f477bd"/><stop offset="1" stop-color="#d0a8ff"/></linearGradient>
+    <radialGradient id="halo"><stop stop-color="#e172cd" stop-opacity=".42"/><stop offset="1" stop-color="#e172cd" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M42 0H0V42" fill="none" stroke="#c892e7" stroke-opacity=".13"/></pattern>
+    <clipPath id="clip"><rect width="1200" height="320" rx="22"/></clipPath>
+  </defs>
+  <g clip-path="url(#clip)">
+    <rect width="1200" height="320" fill="url(#background)"/>
+    <rect width="1200" height="320" fill="url(#grid)"><animateTransform attributeName="transform" type="translate" from="0 0" to="42 42" dur="10s" repeatCount="indefinite"/></rect>
+    <circle cx="965" cy="105" r="250" fill="url(#halo)"><animate attributeName="opacity" values=".55;1;.55" dur="6s" repeatCount="indefinite"/></circle>
+    <circle cx="965" cy="140" r="125" fill="none" stroke="#d58cee" stroke-opacity=".55" stroke-width="1"/>
+    <circle cx="965" cy="140" r="92" fill="none" stroke="#f477bd" stroke-opacity=".5" stroke-width="1" stroke-dasharray="8 9"><animateTransform attributeName="transform" type="rotate" from="0 965 140" to="360 965 140" dur="35s" repeatCount="indefinite"/></circle>
+    <text x="965" y="173" text-anchor="middle" font-family="Arial,sans-serif" font-size="105" fill="#f7dbf7">✦</text>
+    <path d="M38 266H1162" stroke="url(#accent)" stroke-width="2" stroke-opacity=".8"/>
+    <text x="72" y="76" font-family="Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="4" fill="#f477bd">DEVPLAY / COMMERCE SHOWCASE</text>
+    <text x="66" y="178" font-family="Arial,sans-serif" font-size="90" font-weight="800" letter-spacing="-4" fill="url(#accent)">NOVA STORE</text>
+    <text x="72" y="220" font-family="Arial,sans-serif" font-size="19" letter-spacing="3" fill="#e6d2ec">DISCOVER  •  CART  •  CHECKOUT  •  MANAGE</text>
+    <text x="72" y="294" font-family="Arial,sans-serif" font-size="12" letter-spacing="2" fill="#c4a9d1">INTERACTIVE DEMO  /  ARABIC RTL  /  BUILT BY DEVPLAY</text>
+    <rect x="15" y="15" width="1170" height="290" rx="14" fill="none" stroke="url(#accent)" stroke-opacity=".35"/>
+  </g>
+</svg>
